@@ -8,4 +8,4 @@ FROM nginx:alpine
 
 COPY site /usr/share/nginx/html
 
-EXPOSE 80 443
+# EXPOSE 80 443
