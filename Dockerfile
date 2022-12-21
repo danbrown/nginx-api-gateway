@@ -1,5 +1,10 @@
 FROM nginx:alpine
 
+ARG PORT
+ENV PORT=$PORT
+
+RUN echo "PORT: $PORT"
+
 RUN cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bkp
 COPY nginx.conf /etc/nginx/nginx.conf
 
