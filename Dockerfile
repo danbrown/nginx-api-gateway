@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
-# ARG PORT
-# ENV PORT=$PORT
+ARG PORT
+ENV PORT=$PORT
 
 RUN echo "PORT: $PORT"
 
