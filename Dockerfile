@@ -6,6 +6,6 @@ FROM nginx:alpine
 # RUN rm -rf /etc/nginx/conf.d/*
 # COPY services/* /etc/nginx/conf.d/
 
-# COPY site /usr/share/nginx/html
+COPY site /usr/share/nginx/html
 
 EXPOSE 80 443
