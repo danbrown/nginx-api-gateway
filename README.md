@@ -8,20 +8,25 @@ This example is deploys a site using [NGINX](https://www.nginx.com/)
 ## ✨ Features
 
 - NGINX
-- Static Site
+- Api gateway routes
 
-## 💁‍♀️ How to use
-
-- Open the `site/index.html` in the browser
+## 🚧 Test
+```cs
+http://127.0.0.1/depth
+http://127.0.0.1/ticker
+http://127.0.0.1/btc/brl
+```
 
 ## 📝 Notes
 
 By default the `site/` directory gets deployed as a static site. This can be modified by changing the `Dockerfile`.
 
-The site is deployed using the default NGINX configuration. This can be overridden with a custom conf file by adding
+This is deployed using the default NGINX configuration, can be overridden with a custom conf file by adding:
 
 ```
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
 
 to the end of the Dockerfile. For more information, [read the docs](https://hub.docker.com/_/nginx).
+
+![NGNIX](https://www.nginx.com/wp-content/uploads/2018/08/API-gateway-gRPC-sample-topology.png)
